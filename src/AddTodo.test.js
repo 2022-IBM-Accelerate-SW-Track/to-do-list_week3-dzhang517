@@ -108,6 +108,6 @@ test('test that App component renders different colors for past due events', () 
   fireEvent.change(inputDate, { target: { value: dueDate}});
   fireEvent.click(element);
   
-  const check = screen.getByTestId(/test task/i).style.background;
+  const check = screen.getByTestId(/Test/i).style.background;
   expect(check).toBe("rgb(255, 204, 203)");
 });
