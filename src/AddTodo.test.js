@@ -17,8 +17,6 @@ afterEach(() => {
 });
 
 
-
-
 test('test that App component doesn\'t render dupicate Task', () => {
   render(<App />);
   const inputTask = screen.getByRole('textbox', {name: /Add New Item/i});
